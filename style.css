@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 6;
+}
+/* <div class="calculator"> */
+.calculator{
+    background-color: rgb(23,101,201);
+    max-width: 400px;
+    margin: 2cm;
+    padding: 20px;
+    border: solid 3px #000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0,3);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+/*  <input type="text" id="result"> */
+#result{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2px;
+    font-size: 17px;
+    border: none;
+    box-shadow: 0px 2px 5px rgb(9, 89, 22)
+    inset;
+    border-radius: 5px;
+
+
+}
+/*<div class="buttons">*/
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:2px;
+    margin-top: 10px;
+
+}
+/*<button class="clear">C</button> */
+button{
+    padding: 5px;
+    font-size: 24px;
+    border: 2px;
+    box-shadow: 0px 2px 5px #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+} 
+
+.clear{
+
+    background-color: tomato;
+    color: aliceblue;
+    grid-row: span 3;
+
+}
+
+.operator{
+    background-color: cadetblue;
+    color: aliceblue;
+}
+
+
+.equals{
+    background-color: brown;
+    color: aliceblue;
+}
+
+.decimal{
+    background-color: dimgray;
+    color: aliceblue;
+}
